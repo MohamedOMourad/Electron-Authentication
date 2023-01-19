@@ -1,16 +1,18 @@
 import { MemoryRouter as Router, Routes, Route } from 'react-router-dom';
-import icon from '../../assets/icon.svg';
 import './App.css';
 
-const Hello = () => {
-  return <div>ewwe</div>;
-};
+//components
+import LoginHandler from './components/login/LoginHandler';
+
+//pages
+import Login from './pages/Login';
 
 export default function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Hello />} />
+        <Route path="/" element={<LoginHandler />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </Router>
   );
