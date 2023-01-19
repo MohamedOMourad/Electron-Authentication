@@ -11,7 +11,7 @@ export default function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<LoginHandler />} />
+        <Route path="/" element={<Login />} />
         <Route path="/login" element={<Login />} />
       </Routes>
     </Router>
